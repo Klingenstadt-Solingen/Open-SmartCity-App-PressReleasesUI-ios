@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1139EFE128C9234D0050FAD4 /* PressReleasesFlow+OSCADeeplinkHandeble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139EFE028C9234D0050FAD4 /* PressReleasesFlow+OSCADeeplinkHandeble.swift */; };
+		1139EFE328C92D1E0050FAD4 /* PressReleasesDI+DeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139EFE228C92D1E0050FAD4 /* PressReleasesDI+DeeplinkHandler.swift */; };
+		113CF4E628634FDF00D1EB82 /* OSCAPressReleasesFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4BF28634FDE00D1EB82 /* OSCAPressReleasesFlowCoordinator.swift */; };
+		113CF4E728634FDF00D1EB82 /* OSCAPressReleasesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4C028634FDE00D1EB82 /* OSCAPressReleasesUI.swift */; };
+		113CF4E828634FDF00D1EB82 /* OSCAPressReleasesMainCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4C328634FDE00D1EB82 /* OSCAPressReleasesMainCellViewModel.swift */; };
+		113CF4E928634FDF00D1EB82 /* OSCAPressReleasesMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4C428634FDE00D1EB82 /* OSCAPressReleasesMainViewModel.swift */; };
+		113CF4EA28634FDF00D1EB82 /* OSCAPressReleasesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4C628634FDE00D1EB82 /* OSCAPressReleasesMainViewController.swift */; };
+		113CF4EB28634FDF00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4C728634FDE00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.swift */; };
+		113CF4EC28634FDF00D1EB82 /* OSCAPressReleasesMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113CF4C928634FDE00D1EB82 /* OSCAPressReleasesMainViewController.storyboard */; };
+		113CF4ED28634FDF00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113CF4CA28634FDE00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.xib */; };
+		113CF4EE28634FDF00D1EB82 /* OSCAPressReleasesUIDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4CB28634FDE00D1EB82 /* OSCAPressReleasesUIDIContainer.swift */; };
+		113CF4EF28634FDF00D1EB82 /* OSCAPressReleasesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4CE28634FDF00D1EB82 /* OSCAPressReleasesDetailViewModel.swift */; };
+		113CF4F028634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CF4D028634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.swift */; };
+		113CF4F128634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113CF4D228634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.storyboard */; };
+		113CF4FA28634FDF00D1EB82 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113CF4E128634FDF00D1EB82 /* Localizable.strings */; };
+		113CF4FB28634FDF00D1EB82 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113CF4E328634FDF00D1EB82 /* Media.xcassets */; };
+		119F495628634DD9001B7365 /* OSCAPressReleasesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119F494D28634DD9001B7365 /* OSCAPressReleasesUI.framework */; };
+		119F495B28634DD9001B7365 /* OSCAPressReleasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F495A28634DD9001B7365 /* OSCAPressReleasesUITests.swift */; };
+		119F495C28634DD9001B7365 /* OSCAPressReleasesUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 119F495028634DD9001B7365 /* OSCAPressReleasesUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		119F496728634E14001B7365 /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119F496628634E14001B7365 /* OSCAEssentials.framework */; };
+		119F496828634E14001B7365 /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 119F496628634E14001B7365 /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		119F496B28634E45001B7365 /* OSCAPressReleases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119F496A28634E45001B7365 /* OSCAPressReleases.framework */; };
+		119F496C28634E45001B7365 /* OSCAPressReleases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 119F496A28634E45001B7365 /* OSCAPressReleases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		119F496E28634E50001B7365 /* OSCANetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119F496D28634E50001B7365 /* OSCANetworkService.framework */; };
+		119F496F28634E50001B7365 /* OSCANetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 119F496D28634E50001B7365 /* OSCANetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11A5FD41287C3A8F0066ECFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11A5FD3F287C3A8E0066ECFE /* Localizable.strings */; };
+		11FC17122875E7460056F002 /* OSCATestCaseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC17112875E7460056F002 /* OSCATestCaseExtension.framework */; };
+		11FC17232875FBF50056F002 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 11FC17222875FBF50056F002 /* SwiftSoup */; };
+		F76842AE29F7D8B800463CA5 /* OSCAPressReleasesMainWidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76842AD29F7D8B800463CA5 /* OSCAPressReleasesMainWidgetViewModel.swift */; };
+		F76842B029F7DBD000463CA5 /* OSCAPressReleasesMainWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76842AF29F7DBD000463CA5 /* OSCAPressReleasesMainWidgetViewController.swift */; };
+		F76842B229F7E13700463CA5 /* OSCAPressReleasesWidgetFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76842B129F7E13700463CA5 /* OSCAPressReleasesWidgetFlowCoordinator.swift */; };
+		F76842B429F7EE4200463CA5 /* OSCAPressReleasesMainWidgetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76842B329F7EE4200463CA5 /* OSCAPressReleasesMainWidgetViewController.storyboard */; };
+		F7998FDF28880D0A0063D547 /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7998FDD28880D0A0063D547 /* API_Release.plist */; };
+		F7998FE028880D0A0063D547 /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7998FDE28880D0A0063D547 /* API_Develop.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		119F495728634DD9001B7365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119F494428634DD9001B7365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 119F494C28634DD9001B7365;
+			remoteInfo = OSCAPressReleasesUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		119F496928634E14001B7365 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				119F496C28634E45001B7365 /* OSCAPressReleases.framework in Embed Frameworks */,
+				119F496828634E14001B7365 /* OSCAEssentials.framework in Embed Frameworks */,
+				119F496F28634E50001B7365 /* OSCANetworkService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1139EFE028C9234D0050FAD4 /* PressReleasesFlow+OSCADeeplinkHandeble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PressReleasesFlow+OSCADeeplinkHandeble.swift"; sourceTree = "<group>"; };
+		1139EFE228C92D1E0050FAD4 /* PressReleasesDI+DeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PressReleasesDI+DeeplinkHandler.swift"; sourceTree = "<group>"; };
+		113CF4BF28634FDE00D1EB82 /* OSCAPressReleasesFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesFlowCoordinator.swift; sourceTree = "<group>"; };
+		113CF4C028634FDE00D1EB82 /* OSCAPressReleasesUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesUI.swift; sourceTree = "<group>"; };
+		113CF4C328634FDE00D1EB82 /* OSCAPressReleasesMainCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesMainCellViewModel.swift; sourceTree = "<group>"; };
+		113CF4C428634FDE00D1EB82 /* OSCAPressReleasesMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesMainViewModel.swift; sourceTree = "<group>"; };
+		113CF4C628634FDE00D1EB82 /* OSCAPressReleasesMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesMainViewController.swift; sourceTree = "<group>"; };
+		113CF4C728634FDE00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		113CF4C928634FDE00D1EB82 /* OSCAPressReleasesMainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OSCAPressReleasesMainViewController.storyboard; sourceTree = "<group>"; };
+		113CF4CA28634FDE00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSCAPressReleasesMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		113CF4CB28634FDE00D1EB82 /* OSCAPressReleasesUIDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesUIDIContainer.swift; sourceTree = "<group>"; };
+		113CF4CE28634FDF00D1EB82 /* OSCAPressReleasesDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesDetailViewModel.swift; sourceTree = "<group>"; };
+		113CF4D028634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesDetailViewController.swift; sourceTree = "<group>"; };
+		113CF4D228634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OSCAPressReleasesDetailViewController.storyboard; sourceTree = "<group>"; };
+		113CF4D628634FDF00D1EB82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113CF4E228634FDF00D1EB82 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		113CF4E328634FDF00D1EB82 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		113CF4E428634FDF00D1EB82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		113CF5052863504500D1EB82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119F494D28634DD9001B7365 /* OSCAPressReleasesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCAPressReleasesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		119F495028634DD9001B7365 /* OSCAPressReleasesUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCAPressReleasesUI.h; sourceTree = "<group>"; };
+		119F495528634DD9001B7365 /* OSCAPressReleasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCAPressReleasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		119F495A28634DD9001B7365 /* OSCAPressReleasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesUITests.swift; sourceTree = "<group>"; };
+		119F496628634E14001B7365 /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		119F496A28634E45001B7365 /* OSCAPressReleases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAPressReleases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		119F496D28634E50001B7365 /* OSCANetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCANetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A5FD40287C3A8F0066ECFE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11D0E0B1287D43F70094C026 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		11D0E0B2287D43F70094C026 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		11FC17112875E7460056F002 /* OSCATestCaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCATestCaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76842AD29F7D8B800463CA5 /* OSCAPressReleasesMainWidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesMainWidgetViewModel.swift; sourceTree = "<group>"; };
+		F76842AF29F7DBD000463CA5 /* OSCAPressReleasesMainWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesMainWidgetViewController.swift; sourceTree = "<group>"; };
+		F76842B129F7E13700463CA5 /* OSCAPressReleasesWidgetFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAPressReleasesWidgetFlowCoordinator.swift; sourceTree = "<group>"; };
+		F76842B329F7EE4200463CA5 /* OSCAPressReleasesMainWidgetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OSCAPressReleasesMainWidgetViewController.storyboard; sourceTree = "<group>"; };
+		F7998FDD28880D0A0063D547 /* API_Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Release.plist; path = ../../../../../SupportingFiles/API_Release.plist; sourceTree = "<group>"; };
+		F7998FDE28880D0A0063D547 /* API_Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Develop.plist; path = ../../../../../SupportingFiles/API_Develop.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		119F494A28634DD9001B7365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119F496B28634E45001B7365 /* OSCAPressReleases.framework in Frameworks */,
+				11FC17232875FBF50056F002 /* SwiftSoup in Frameworks */,
+				119F496728634E14001B7365 /* OSCAEssentials.framework in Frameworks */,
+				119F496E28634E50001B7365 /* OSCANetworkService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119F495228634DD9001B7365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FC17122875E7460056F002 /* OSCATestCaseExtension.framework in Frameworks */,
+				119F495628634DD9001B7365 /* OSCAPressReleasesUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1139EFDF28C922D40050FAD4 /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				1139EFE028C9234D0050FAD4 /* PressReleasesFlow+OSCADeeplinkHandeble.swift */,
+				1139EFE228C92D1E0050FAD4 /* PressReleasesDI+DeeplinkHandler.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		113CF4BD28634FDE00D1EB82 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4BF28634FDE00D1EB82 /* OSCAPressReleasesFlowCoordinator.swift */,
+				F76842B129F7E13700463CA5 /* OSCAPressReleasesWidgetFlowCoordinator.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		113CF4C128634FDE00D1EB82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4C228634FDE00D1EB82 /* ViewModel */,
+				113CF4C528634FDE00D1EB82 /* Controller */,
+				113CF4C828634FDE00D1EB82 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		113CF4C228634FDE00D1EB82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4C428634FDE00D1EB82 /* OSCAPressReleasesMainViewModel.swift */,
+				113CF4C328634FDE00D1EB82 /* OSCAPressReleasesMainCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		113CF4C528634FDE00D1EB82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4C628634FDE00D1EB82 /* OSCAPressReleasesMainViewController.swift */,
+				113CF4C728634FDE00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		113CF4C828634FDE00D1EB82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4C928634FDE00D1EB82 /* OSCAPressReleasesMainViewController.storyboard */,
+				113CF4CA28634FDE00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		113CF4CC28634FDF00D1EB82 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4CD28634FDF00D1EB82 /* ViewModel */,
+				113CF4CF28634FDF00D1EB82 /* Controller */,
+				113CF4D128634FDF00D1EB82 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		113CF4CD28634FDF00D1EB82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4CE28634FDF00D1EB82 /* OSCAPressReleasesDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		113CF4CF28634FDF00D1EB82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4D028634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		113CF4D128634FDF00D1EB82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4D228634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		113CF4E028634FDF00D1EB82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4E128634FDF00D1EB82 /* Localizable.strings */,
+				113CF4E328634FDF00D1EB82 /* Media.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		115A377528805405009E4A53 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		119F494328634DD9001B7365 = {
+			isa = PBXGroup;
+			children = (
+				115A377528805405009E4A53 /* scripts */,
+				119F494F28634DD9001B7365 /* OSCAPressReleasesUI */,
+				119F495928634DD9001B7365 /* OSCAPressReleasesUITests */,
+				119F494E28634DD9001B7365 /* Products */,
+				119F496528634E14001B7365 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		119F494E28634DD9001B7365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				119F494D28634DD9001B7365 /* OSCAPressReleasesUI.framework */,
+				119F495528634DD9001B7365 /* OSCAPressReleasesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		119F494F28634DD9001B7365 /* OSCAPressReleasesUI */ = {
+			isa = PBXGroup;
+			children = (
+				F76842A829F7D69800463CA5 /* PressReleasesScene */,
+				1139EFDF28C922D40050FAD4 /* Deeplink */,
+				113CF4C028634FDE00D1EB82 /* OSCAPressReleasesUI.swift */,
+				113CF4CB28634FDE00D1EB82 /* OSCAPressReleasesUIDIContainer.swift */,
+				113CF4D628634FDF00D1EB82 /* Info.plist */,
+				113CF4E028634FDF00D1EB82 /* Resources */,
+				11D0E088287D40A50094C026 /* SupportingFiles */,
+				119F495028634DD9001B7365 /* OSCAPressReleasesUI.h */,
+			);
+			path = OSCAPressReleasesUI;
+			sourceTree = "<group>";
+		};
+		119F495928634DD9001B7365 /* OSCAPressReleasesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				113CF5052863504500D1EB82 /* Info.plist */,
+				119F495A28634DD9001B7365 /* OSCAPressReleasesUITests.swift */,
+				11A5FD3E287C3A8E0066ECFE /* Resources */,
+			);
+			path = OSCAPressReleasesUITests;
+			sourceTree = "<group>";
+		};
+		119F496528634E14001B7365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11FC17112875E7460056F002 /* OSCATestCaseExtension.framework */,
+				119F496D28634E50001B7365 /* OSCANetworkService.framework */,
+				119F496A28634E45001B7365 /* OSCAPressReleases.framework */,
+				119F496628634E14001B7365 /* OSCAEssentials.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11A5FD3E287C3A8E0066ECFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7998FDE28880D0A0063D547 /* API_Develop.plist */,
+				F7998FDD28880D0A0063D547 /* API_Release.plist */,
+				11A5FD3F287C3A8E0066ECFE /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11D0E088287D40A50094C026 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11D0E0B2287D43F70094C026 /* Development.xcconfig */,
+				11D0E0B1287D43F70094C026 /* Production.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F76842A829F7D69800463CA5 /* PressReleasesScene */ = {
+			isa = PBXGroup;
+			children = (
+				113CF4C128634FDE00D1EB82 /* Main */,
+				F76842A929F7D84E00463CA5 /* MainWidget */,
+				113CF4CC28634FDF00D1EB82 /* Detail */,
+				113CF4BD28634FDE00D1EB82 /* Flow */,
+			);
+			path = PressReleasesScene;
+			sourceTree = "<group>";
+		};
+		F76842A929F7D84E00463CA5 /* MainWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F76842AC29F7D86D00463CA5 /* ViewModel */,
+				F76842AB29F7D86300463CA5 /* Controller */,
+				F76842AA29F7D85C00463CA5 /* View */,
+			);
+			path = MainWidget;
+			sourceTree = "<group>";
+		};
+		F76842AA29F7D85C00463CA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F76842B329F7EE4200463CA5 /* OSCAPressReleasesMainWidgetViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F76842AB29F7D86300463CA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F76842AF29F7DBD000463CA5 /* OSCAPressReleasesMainWidgetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F76842AC29F7D86D00463CA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F76842AD29F7D8B800463CA5 /* OSCAPressReleasesMainWidgetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		119F494828634DD9001B7365 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119F495C28634DD9001B7365 /* OSCAPressReleasesUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		119F494C28634DD9001B7365 /* OSCAPressReleasesUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119F495F28634DD9001B7365 /* Build configuration list for PBXNativeTarget "OSCAPressReleasesUI" */;
+			buildPhases = (
+				119F494828634DD9001B7365 /* Headers */,
+				119F494928634DD9001B7365 /* Sources */,
+				119F494A28634DD9001B7365 /* Frameworks */,
+				119F494B28634DD9001B7365 /* Resources */,
+				119F496928634E14001B7365 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCAPressReleasesUI;
+			packageProductDependencies = (
+				11FC17222875FBF50056F002 /* SwiftSoup */,
+			);
+			productName = OSCAPressReleasesUI;
+			productReference = 119F494D28634DD9001B7365 /* OSCAPressReleasesUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		119F495428634DD9001B7365 /* OSCAPressReleasesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119F496228634DD9001B7365 /* Build configuration list for PBXNativeTarget "OSCAPressReleasesUITests" */;
+			buildPhases = (
+				119F495128634DD9001B7365 /* Sources */,
+				119F495228634DD9001B7365 /* Frameworks */,
+				119F495328634DD9001B7365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119F495828634DD9001B7365 /* PBXTargetDependency */,
+			);
+			name = OSCAPressReleasesUITests;
+			productName = OSCAPressReleasesUITests;
+			productReference = 119F495528634DD9001B7365 /* OSCAPressReleasesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		119F494428634DD9001B7365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					119F494C28634DD9001B7365 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					119F495428634DD9001B7365 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 119F494728634DD9001B7365 /* Build configuration list for PBXProject "OSCAPressReleasesUI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 119F494328634DD9001B7365;
+			packageReferences = (
+				11FC17212875FBF50056F002 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 119F494E28634DD9001B7365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				119F494C28634DD9001B7365 /* OSCAPressReleasesUI */,
+				119F495428634DD9001B7365 /* OSCAPressReleasesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		119F494B28634DD9001B7365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113CF4EC28634FDF00D1EB82 /* OSCAPressReleasesMainViewController.storyboard in Resources */,
+				113CF4F128634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.storyboard in Resources */,
+				F76842B429F7EE4200463CA5 /* OSCAPressReleasesMainWidgetViewController.storyboard in Resources */,
+				113CF4FA28634FDF00D1EB82 /* Localizable.strings in Resources */,
+				113CF4FB28634FDF00D1EB82 /* Media.xcassets in Resources */,
+				113CF4ED28634FDF00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119F495328634DD9001B7365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A5FD41287C3A8F0066ECFE /* Localizable.strings in Resources */,
+				F7998FE028880D0A0063D547 /* API_Develop.plist in Resources */,
+				F7998FDF28880D0A0063D547 /* API_Release.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		119F494928634DD9001B7365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113CF4E628634FDF00D1EB82 /* OSCAPressReleasesFlowCoordinator.swift in Sources */,
+				F76842AE29F7D8B800463CA5 /* OSCAPressReleasesMainWidgetViewModel.swift in Sources */,
+				1139EFE328C92D1E0050FAD4 /* PressReleasesDI+DeeplinkHandler.swift in Sources */,
+				113CF4E728634FDF00D1EB82 /* OSCAPressReleasesUI.swift in Sources */,
+				113CF4E928634FDF00D1EB82 /* OSCAPressReleasesMainViewModel.swift in Sources */,
+				F76842B229F7E13700463CA5 /* OSCAPressReleasesWidgetFlowCoordinator.swift in Sources */,
+				1139EFE128C9234D0050FAD4 /* PressReleasesFlow+OSCADeeplinkHandeble.swift in Sources */,
+				113CF4EE28634FDF00D1EB82 /* OSCAPressReleasesUIDIContainer.swift in Sources */,
+				113CF4EB28634FDF00D1EB82 /* OSCAPressReleasesMainCollectionViewCell.swift in Sources */,
+				113CF4EF28634FDF00D1EB82 /* OSCAPressReleasesDetailViewModel.swift in Sources */,
+				113CF4F028634FDF00D1EB82 /* OSCAPressReleasesDetailViewController.swift in Sources */,
+				F76842B029F7DBD000463CA5 /* OSCAPressReleasesMainWidgetViewController.swift in Sources */,
+				113CF4E828634FDF00D1EB82 /* OSCAPressReleasesMainCellViewModel.swift in Sources */,
+				113CF4EA28634FDF00D1EB82 /* OSCAPressReleasesMainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119F495128634DD9001B7365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119F495B28634DD9001B7365 /* OSCAPressReleasesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		119F495828634DD9001B7365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 119F494C28634DD9001B7365 /* OSCAPressReleasesUI */;
+			targetProxy = 119F495728634DD9001B7365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		113CF4E128634FDF00D1EB82 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				113CF4E228634FDF00D1EB82 /* de */,
+				113CF4E428634FDF00D1EB82 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		11A5FD3F287C3A8E0066ECFE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11A5FD40287C3A8F0066ECFE /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		119F495D28634DD9001B7365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0B2287D43F70094C026 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		119F495E28634DD9001B7365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0B1287D43F70094C026 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		119F496028634DD9001B7365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0B2287D43F70094C026 /* Development.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAPressReleasesUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.pressreleases.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		119F496128634DD9001B7365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0B1287D43F70094C026 /* Production.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAPressReleasesUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.pressreleases.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		119F496328634DD9001B7365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0B2287D43F70094C026 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAPressReleasesUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.pressreleases.ui.OSCAPressReleasesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		119F496428634DD9001B7365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0B1287D43F70094C026 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAPressReleasesUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.pressreleases.ui.OSCAPressReleasesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		119F494728634DD9001B7365 /* Build configuration list for PBXProject "OSCAPressReleasesUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119F495D28634DD9001B7365 /* Debug */,
+				119F495E28634DD9001B7365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119F495F28634DD9001B7365 /* Build configuration list for PBXNativeTarget "OSCAPressReleasesUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119F496028634DD9001B7365 /* Debug */,
+				119F496128634DD9001B7365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119F496228634DD9001B7365 /* Build configuration list for PBXNativeTarget "OSCAPressReleasesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119F496328634DD9001B7365 /* Debug */,
+				119F496428634DD9001B7365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11FC17212875FBF50056F002 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11FC17222875FBF50056F002 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11FC17212875FBF50056F002 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 119F494428634DD9001B7365 /* Project object */;
+}

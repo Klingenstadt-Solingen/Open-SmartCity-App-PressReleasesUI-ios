@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  OSCAPressReleasesUI
+
+  Created by Ömer Kurutay on 03.02.22.
+  
+*/
+
+// MARK: Press Releases Shared
+
+// The reading time needed to finish a press release
+"press_releases_press_release_reading_time" = "min reading time";
+
+// MARK: Press Releases
+
+// The screen title for press releases
+"press_releases_title" = "Press releases";
+// The alert title for an error
+"press_releases_alert_title_error" = "Error";
+// The alert action title to confirm
+"press_releases_alert_title_confirm" = "OK";
+// Searchbar placeholder
+"press_releases_search_placeholder" = "Search";
+
+// MARK: Press Releases Detail
+
+// The title to forward to the app store
+"press_releases_app_store_forwarding_title" = "Found here";
